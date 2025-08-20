@@ -36,3 +36,60 @@ body {
     transform: scale(1.02);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
+
+.card_image-container {
+    width: 100%;
+    height: 200px;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_info {
+    padding: 24px;
+}
+
+.card_name {
+    font-size: 1.5rem;
+    color: var(--cor-texto-primario);
+    margin-bottom: 8px;
+}
+
+.card_title {
+    font-size: 1rem;
+    color: var(--cor-texto-secundairo);
+    margin-bottom: 16px;
+}
+
+.card_social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card_social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--cor-acento);
+    border: 2px solid var(--cor-acento);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3 ease;
+}
+
+.card_social a:hover {
+    background-color: var(--cor-acento);
+    color: #fff;
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+}
